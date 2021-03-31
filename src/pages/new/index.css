@@ -1,0 +1,281 @@
+.page-add-todo {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.add-todo {
+  padding: 40px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-todo-input {
+  display: block;
+  font-size: 50rpx;
+  font-weight: 100;
+  padding: 5px 5px;
+  background: none;
+  border:none;
+  border-bottom: 1px solid #DFDFDF;
+  color: #0EFFD6;
+  width: 100%;
+}
+
+.anna-btn-plain {
+  font-weight: 400;
+  color: #666;
+  border: 1rpx solid transparent;
+  background-color: transparent;
+}
+
+.anna-btn-large{
+  display: flex;
+  flex-direction: column;
+}
+
+.anna-btn-superlarge {
+  font-size: 30rpx;
+  height: 118rpx;
+  width: 118rpx;
+  line-height: 80rpx;
+  border-radius: 84rpx;
+  display: flex;
+  flex-direction: column;
+  background-size: 100% 100%;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg t='1616036140674' class='icon' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='39318' width='200' height='200'%3E%3Cpath d='M512 512m-480.0512 0a480.0512 480.0512 0 1 0 960.1024 0 480.0512 480.0512 0 1 0-960.1024 0Z' fill='%23F0EEE2' p-id='39319'%3E%3C/path%3E%3Cpath d='M768 512c0-5.7344-3.072-10.9568-7.9872-13.824l-384-224.0512c-7.5776-4.5056-17.408-1.9456-21.8112 5.7344-1.4336 2.4576-2.1504 5.2224-2.1504 8.0896v448c0 8.8064 7.168 15.9744 15.9744 15.9744 2.8672 0 5.632-0.7168 8.0896-2.1504l384-224.0512c4.8128-2.7648 7.8848-7.9872 7.8848-13.7216z' fill='%23BBAA9C' p-id='39320'%3E%3C/path%3E%3Cpath d='M816.0256 655.9744c-8.8064 0-15.9744 7.168-15.9744 15.9744s7.168 15.9744 15.9744 15.9744 15.9744-7.168 15.9744-15.9744-7.168-15.9744-15.9744-15.9744zM496.0256 159.9488c0-8.8064-7.168-15.9744-15.9744-15.9744h-79.9744c-8.8064 0.2048-15.7696 7.5776-15.5648 16.384 0.2048 8.4992 7.0656 15.36 15.5648 15.5648h79.9744c8.8064 0.1024 15.9744-7.0656 15.9744-15.9744zM176.0256 736.0512h-64c-8.8064 0.2048-15.7696 7.5776-15.5648 16.384 0.2048 8.4992 7.0656 15.36 15.5648 15.5648h64c8.8064-0.2048 15.7696-7.5776 15.5648-16.384-0.2048-8.4992-7.0656-15.36-15.5648-15.5648z m351.9488-144.0768c0 8.8064 7.168 15.9744 15.9744 15.9744h79.9744l31.9488-31.9488H543.9488c-8.8064 0-15.9744 7.168-15.9744 15.9744z m-64-159.9488h-32.0512c-8.8064 0.2048-15.7696 7.5776-15.5648 16.384 0.2048 8.4992 7.0656 15.36 15.5648 15.5648H463.872c8.8064-0.2048 15.7696-7.5776 15.5648-16.384-0.1024-8.4992-6.9632-15.36-15.4624-15.5648zM128 399.9744c0-8.8064-7.168-15.9744-15.9744-15.9744H48.0256c-8.8064 0-15.9744 7.168-15.9744 15.9744s7.168 15.9744 15.9744 15.9744h64c8.8064 0 15.9744-7.0656 15.9744-15.9744z m79.9744 176.0256h-15.9744c-8.8064 0.2048-15.7696 7.5776-15.5648 16.384 0.2048 8.4992 7.0656 15.36 15.5648 15.5648h15.9744c8.8064 0.2048 16.1792-6.7584 16.384-15.5648 0.2048-8.8064-6.7584-16.1792-15.5648-16.384h-0.8192z m608.0512 271.9744h-128c-8.8064 0-15.9744 7.168-15.9744 15.9744s7.168 15.9744 15.9744 15.9744h128c8.8064 0 15.9744-7.168 15.9744-15.9744s-7.168-15.9744-15.9744-15.9744z m31.9488-495.9232h-31.9488c-8.8064-0.2048-16.1792 6.7584-16.384 15.5648s6.7584 16.1792 15.5648 16.384h32.768c8.8064-0.2048 15.7696-7.5776 15.5648-16.384-0.2048-8.4992-6.9632-15.36-15.5648-15.5648zM527.9744 783.9744h-32.0512c-8.8064 0-15.9744 7.168-15.9744 15.9744s7.168 15.9744 15.9744 15.9744h31.9488c8.8064 0 15.9744-7.168 15.9744-15.9744s-7.0656-15.9744-15.872-15.9744zM640 287.9488h-48.0256c-8.8064-0.2048-16.1792 6.7584-16.384 15.5648s6.7584 16.1792 15.5648 16.384H640c8.8064-0.2048 15.7696-7.5776 15.5648-16.384-0.2048-8.3968-7.0656-15.2576-15.5648-15.5648z' fill='%23D8D5BA' p-id='39321'%3E%3C/path%3E%3Cpath d='M768.1024 484.4544L386.2528 261.632c-14.7456-10.0352-34.816-6.2464-44.8512 8.4992-3.584 5.2224-5.5296 11.4688-5.632 17.8176v448.1024c0.2048 17.8176 14.7456 32.1536 32.6656 31.9488 6.3488-0.1024 12.5952-2.048 17.8176-5.632L768.1024 539.648v-0.1024c15.2576-8.9088 20.3776-28.4672 11.4688-43.6224-2.7648-4.8128-6.656-8.704-11.4688-11.4688zM368.0256 736.0512V287.9488l384 224.0512-384 224.0512zM512 0C229.2736 0 0 229.2736 0 512s229.2736 512 512 512 512-229.2736 512-512S794.7264 0 512 0z m0 960.1024C264.4992 960.1024 63.8976 759.5008 63.8976 512S264.4992 63.8976 512 63.8976 960.1024 264.4992 960.1024 512 759.5008 960.1024 512 960.1024z' fill='%235F4E56' p-id='39322'%3E%3C/path%3E%3C/svg%3E");
+}
+
+
+.todo-footer {
+  padding: 20rpx 0 100rpx;
+  font-size: 48rpx;
+  font-weight: 200;
+  text-align: center;
+}
+
+/* first-card */
+.myPic {
+  display: flex;
+  flex-wrap: wrap;
+  color: #130d166b;
+  font-size: .75rem;
+  /* text-align: center; */
+  /* margin: 24px 0px; */
+  background: none;
+}
+.myPic .flex-width-3 {
+  flex: 0 0 33.3%;
+  padding-left: 17%;
+  padding-right: 17%;
+
+}
+.myPic .flex-width-4 {
+  flex: 0 0 25%;
+  padding-left: 17%;
+  padding-right: 17%; 
+}
+
+.myPic-image {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  align-self: center;
+  border:3px solid #9e9e9e;
+}
+.myPic-image-answer {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.myPic-image-ready {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  align-self: center;
+  border:5px solid #a8f55fe7;
+}
+.myCard {
+  font-size: 0.85rem;
+  color: #9e9e9e;
+  /* padding-left : 17%; */
+}
+.myCard > view:first-child {
+  font-weight: bold;
+  color: #9e9e9e;
+}
+
+.special-bottom image {
+  width: 60px;
+  height: 60px;
+  margin-right: 8px;
+}
+.special-bottom-middle {
+  flex: auto;
+}
+.special-bottom > view:last-child {
+  /* flex: 0 0 100px; */
+  border-top: 1px solid #fbfdfd;
+  /* border-radius: 25px; */
+  text-align: center;
+  padding: 4px;
+}
+.top-yellow-background {
+  display: flex;
+  flex-direction: row;
+  top: 0;
+	left: 0;
+	right: 0;
+	/* bottom: 0; */
+  /* z-index: -1; */
+  height: 55%;
+  
+}
+.bottom {
+  width: 100%;
+  height: 250px;
+  bottom: 0;
+  position: fixed;
+  background-color: rgba(255, 253, 255, 0.452); 
+}
+
+.InGame-text {
+  font-size: 43rpx;
+  color: #f7dfc7;
+  font-weight: 80;
+}
+
+.InGame-white-text {
+  font-size: 43rpx;
+  color: #f7f7f7;
+  font-weight: 80;
+}
+
+.InGame-small-text {
+  font-size: 33rpx;
+  color: #f3daa7;
+  
+}
+
+.first-card{
+  /* display: flex;  */
+  flex-basis: 20%;
+  flex-direction: column;
+  justify-content:center;
+  /* background-color: #f0eb9f0e; */
+}
+
+
+.total-content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  background-color: #181b1b87;
+  /* background-color: #871791f3; */
+  /* z-index: -2; */
+}
+
+.mid-content{
+  display: flex;
+  flex-basis:80%;
+  flex-direction: column-reverse;
+  /* background-image: url("https://i.postimg.cc/g0xVnkFj/image.png"); */
+  /* justify-content: center; */
+  /* background-color: #17913236; */
+}
+
+.mid-draw-content{
+  height: 60%;
+  /* background-color: #8f3eaf63; */
+  /* bottom:420rpx; */
+  /* display: flex; */
+  justify-content: center;
+}
+
+.mid-button-content{
+  display: flex;
+  justify-content: center;
+}
+
+.low-content{
+  /* display: flex; */
+  bottom: 0px;
+  justify-content: center;
+  /* background-color: #8062eb5b; */
+  flex-basis: 35%;
+}
+
+.special-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 19px;
+  /* height: 70px; */
+  /* background-color: rgba(78, 217, 233, 0.103); */
+  color: #f9faf8;
+  font-size: .75rem;
+  padding: 6px 12px;
+  margin-bottom: 12px;
+}
+
+.rule-card{
+  /* display: flex; */
+  border: 3px solid #121213;
+  justify-content: center;
+  background-color: #7f47939e;
+  height: 400rpx;
+}
+
+.white-text{
+  /* display: flex; */
+  color:#f7f7f7
+}
+
+.staff{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg t='1616037134307' class='icon' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='6387' width='200' height='200'%3E%3Cpath d='M97.292 993.27c-5.452 0-10.92-2.062-15.078-6.246l-45.264-45.25c-4-4-6.25-9.406-6.25-15.062s2.25-11.094 6.25-15.094l158.388-158.402a21.324 21.324 0 0 1 30.17 0l45.25 45.246a21.336 21.336 0 0 1 0 30.192l-158.386 158.372a21.18 21.18 0 0 1-15.08 6.244z' fill='%23965353' p-id='6388'%3E%3C/path%3E%3Cpath d='M127.464 896.524c-14.11-14.094-32.858-21.876-52.796-21.876-19.952 0-38.702 7.782-52.796 21.876-29.108 29.124-29.108 76.5 0 105.59 14.094 14.094 32.844 21.876 52.796 21.876 19.938 0 38.688-7.782 52.796-21.876 29.11-29.09 29.11-76.466 0-105.59z' fill='%23FFCE54' p-id='6389'%3E%3C/path%3E%3Cpath d='M119.918 828.652l75.42 75.402 30.17-30.156-75.42-75.438z' fill='%237F4545' p-id='6390'%3E%3C/path%3E%3Cpath d='M618.656 725.34c0 11.782-9.562 21.312-21.344 21.312s-21.344-9.532-21.344-21.312 9.562-21.344 21.344-21.344 21.344 9.562 21.344 21.344z' fill='%2348CFAD' p-id='6391'%3E%3C/path%3E%3Cpath d='M149.324 426.66c0 11.782-9.546 21.344-21.328 21.344s-21.328-9.562-21.328-21.344 9.546-21.312 21.328-21.312c11.78-0.002 21.328 9.53 21.328 21.312z' fill='%235D9CEC' p-id='6392'%3E%3C/path%3E%3Cpath d='M1002.648 384.004c0 11.78-9.562 21.342-21.344 21.342s-21.342-9.562-21.342-21.342c0-11.782 9.56-21.344 21.342-21.344s21.344 9.562 21.344 21.344z' fill='%23A0D468' p-id='6393'%3E%3C/path%3E%3Cpath d='M191.994 128.01c0 11.782-9.546 21.342-21.328 21.342s-21.344-9.562-21.344-21.342 9.562-21.344 21.344-21.344c11.782 0 21.328 9.562 21.328 21.344z' fill='%23AC92EB' p-id='6394'%3E%3C/path%3E%3Cpath d='M533.33 85.354c0 11.78-9.562 21.312-21.342 21.312-11.782 0-21.33-9.532-21.33-21.312 0-11.782 9.546-21.344 21.33-21.344 11.78 0 21.342 9.562 21.342 21.344z' fill='%23ED5564' p-id='6395'%3E%3C/path%3E%3Cpath d='M746.652 938.648c0 11.782-9.562 21.344-21.344 21.344s-21.344-9.562-21.344-21.344 9.562-21.312 21.344-21.312 21.344 9.532 21.344 21.312z' fill='%23FFCE54' p-id='6396'%3E%3C/path%3E%3Cpath d='M895.962 639.996v-21.344c0-11.782-9.532-21.308-21.312-21.308s-21.342 9.528-21.342 21.308v21.344c-11.782 0-21.344 9.562-21.344 21.344s9.562 21.312 21.344 21.312v21.344c0 11.782 9.56 21.344 21.342 21.344s21.312-9.562 21.312-21.344v-21.344c11.782 0 21.344-9.532 21.344-21.312s-9.562-21.344-21.344-21.344z' fill='%235D9CEC' p-id='6397'%3E%3C/path%3E%3Cpath d='M383.99 298.662v-21.312c0-11.782-9.546-21.344-21.328-21.344s-21.344 9.562-21.344 21.344v21.312c-11.782 0-21.328 9.562-21.328 21.342 0 11.782 9.546 21.344 21.328 21.344v21.312c0 11.782 9.562 21.344 21.344 21.344s21.328-9.562 21.328-21.344v-21.312c11.782 0 21.328-9.562 21.328-21.344 0-11.78-9.546-21.342-21.328-21.342z' fill='%23FC6E51' p-id='6398'%3E%3C/path%3E%3Cpath d='M1002.648 42.666V21.354c0-11.78-9.562-21.342-21.344-21.342s-21.342 9.562-21.342 21.342v21.312c-11.782 0-21.312 9.562-21.312 21.344s9.532 21.344 21.312 21.344v21.312c0 11.782 9.56 21.344 21.342 21.344s21.344-9.562 21.344-21.344V85.354c11.78 0 21.31-9.562 21.31-21.344s-9.53-21.344-21.31-21.344z' fill='%2348CFAD' p-id='6399'%3E%3C/path%3E%3Cpath d='M323.568 812.274a21.332 21.332 0 0 1-15.092-6.25l-90.498-90.528c-4.016-4-6.25-9.406-6.25-15.062s2.234-11.094 6.25-15.094L711.308 192.008a21.4 21.4 0 0 1 12.062-6.032l105.594-15.094c6.656-0.938 13.344 1.282 18.094 6.032s6.998 11.468 6.032 18.124l-15.094 105.59a21.1 21.1 0 0 1-6.032 12.062L338.646 806.024c-4 4-9.422 6.25-15.078 6.25z' fill='%23FFCE54' p-id='6400'%3E%3C/path%3E%3Cpath d='M278.304 767.024a21.3 21.3 0 0 1-15.078-6.246c-8.328-8.344-8.328-21.844 0-30.188l372.648-372.648c8.344-8.344 21.844-8.344 30.154 0 8.344 8.314 8.344 21.844 0 30.156l-372.632 372.68a21.328 21.328 0 0 1-15.092 6.246z' fill='%23F6BB42' p-id='6401'%3E%3C/path%3E%3Cpath d='M398.99 836.184L187.806 624.996a21.38 21.38 0 0 0-18.514-5.968 21.27 21.27 0 0 0-15.656 11.532l-30.17 60.312a21.308 21.308 0 0 0 4 24.624l181.01 181.028a21.342 21.342 0 0 0 15.092 6.25c3.234 0 6.5-0.718 9.532-2.25l60.344-30.156a21.354 21.354 0 0 0 5.546-34.184z' fill='%23ED5564' p-id='6402'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.img-view{
+  /* background-size: 100% 100%; */
+  background-color: rgba(46, 40, 29, 0.336);
+  border-radius: 15rpx;
+  border:3px solid #9e9e9e;
+  display: flex;
+  flex-direction: column;
+  width: 120rpx;
+}
+
+.buttons-view{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 200rpx;
+}
+
+.anna-btn-text {
+  color: #ffc107;
+  font-size: 28rpx;
+}
+
+.nick-name{
+  
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color:#f7f7f7;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "remax-todo-demo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Zhen Ziyang <ziyang.zhen@ucdconnect.ie>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "remax build -t wechat -w",
+    "build": "NODE_ENV=production remax build -t wechat"
+  },
+  "dependencies": {
+    "-": "0.0.1",
+    "anna-remax-ui": "^1.9.3",
+    "clsx": "^1.0.4",
+    "json-server": "^0.16.3",
+    "react": "^16.8.6",
+    "remax": "^2.0.0",
+    "swiper": "^6.5.0"
+  }
+}

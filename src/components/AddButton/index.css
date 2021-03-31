@@ -1,0 +1,22 @@
+.add-button {
+  display: block;
+
+  color: rgb(245, 242, 233);
+  border: none;
+  width: 320rpx;
+  height: 75rpx;
+  border-radius: 1.6em; 
+  background-color: #d593f0;
+  box-shadow: 0 5px 20px rgba(212, 133, 243, 0.966);
+}
+
+.add-button::after {
+  content: unset;
+}
+
+.add-icon {
+  font-size: 50rpx;
+  color: #00FFD6;
+  margin-right: 10rpx;
+}
+
